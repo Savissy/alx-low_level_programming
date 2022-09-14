@@ -1,10 +1,9 @@
 #include <unistd.h>
 #include "main.h"
 /**
-* main - a program to print an array of characters
+* main - a program that prints character
 *
 * _putchar - writes the character c to stdout
-* @c: the character to print
 *
 * Return: on success 1
 * on Error, -1 is returned, and errno is set appropriately
@@ -17,7 +16,7 @@ char c;
 while (i <= 8)
 {
 c = ch[i];
-_putchar(c);
+putchar(c);
 i++;
 }
 putchar('\n');
