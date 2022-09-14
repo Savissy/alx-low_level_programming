@@ -1,19 +1,14 @@
-#include <unistd.h>
 #include "main.h"
 /**
-* main - print numbers in in small letter alphabetically
-*
-* Description: using the main function
-* this program prints " programming can be alphabetical "
+* main - Entry point
 * Return: 0
 */
 int main(void)
 {
-char ch;
-for (ch = 'a' ; ch <= 'z' ; ch++)
+char c;
+for (c = 'a' ; c <= 'z' ; c++)
 {
-putchar(ch);
+putchar(c);
 }
 putchar('\n');
-return (0);
 }
