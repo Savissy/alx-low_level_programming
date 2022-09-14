@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
 * main - print numbers in in small letter alphabetically
