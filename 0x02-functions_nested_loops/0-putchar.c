@@ -1,28 +1,18 @@
-#include <unistd.h>
 #include "main.h"
 /**
-* main - a program that prints character
-*
-* _putchar - writes the character c to stdout
-*
-* Return: on success 1
-* on Error, -1 is returned, and errno is set appropriately
+* main - prints _putchar, followed by a new line
+* Return: Always o (success)
 */
 int main(void)
 {
-char ch[8] = "_putchar";
-int i = 0;
-char c;
-while (i <= 8)
-{
-c = ch[i];
-putchar(c);
-i++;
-}
+putchar('_');
+putchar('p');
+putchar('u');
+putchar('t');
+putchar('c');
+putchar('h');
+putchar('a');
+putchar('r');
 putchar('\n');
 return (0);
-}
-int _putchar(char c)
-{
-return (write(1, &c, 1));
 }
