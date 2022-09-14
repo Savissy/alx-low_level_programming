@@ -1,12 +1,13 @@
 #include "main.h"
 /**
-* main - Entry point
-* Return: 0
+* main - prints alphabets
+* print_alphabet - Entry point
+* Return:0
 */
-int main(void)
+void print_alphabet(void)
 {
-char c;
-for (c = 'a' ; c <= 'z' ; c++)
+char c = 'a';
+while (c <= 'z')
 {
 putchar(c);
 }
