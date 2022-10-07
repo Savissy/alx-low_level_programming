@@ -17,10 +17,10 @@ size = max - min + 1;
 s = malloc(sizeof(int) * size);
 if (s == NULL)
 return (NULL);
-while (i < size && min <= max)
+while (min <= max)
 {
 s[i] = min;
-s++;
+i++;
 min++;
 }
 return (s);
