@@ -29,6 +29,7 @@ switch (format[i])
 		str = va_arg(ag, char *);
 		if (!str)
 		printf("(nil)");
+		else
 		printf("%s%s", sep, str);
 		break;
 	default:
