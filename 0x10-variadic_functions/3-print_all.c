@@ -28,8 +28,7 @@ switch (format[i])
 	case 's':
 		str = va_arg(ag, char *);
 		if (!str)
-		printf("(nil)");
-		else
+		str = "(nil)";
 		printf("%s%s", sep, str);
 		break;
 	default:
