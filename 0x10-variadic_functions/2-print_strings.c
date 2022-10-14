@@ -11,9 +11,9 @@ unsigned int i;
 char *s;
 va_list ag;
 va_start(ag, n);
-s = va_arg(ag, char *);
 for (i = 0; i < n; i++)
 {
+s = va_arg(ag, char *);
 if (!separator)
 printf("%s", s);
 else if (!s)
