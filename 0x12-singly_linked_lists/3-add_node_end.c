@@ -35,6 +35,12 @@ if (newnode == NULL)
 return (NULL);
 }
 newnode->str = strdup(str);
+if (newnode->str == NULL)
+{
+free(newnode);
+return (NULL);
+}
+newnode->len = _strlen(newnode->str);
 newnode->next = NULL;
 if (*head == NULL)
 {
